@@ -12,12 +12,27 @@ import {
   View
 } from 'react-native';
 
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
 
 import MainScreen from './screens/MainScreen';
+import swiper from './screens/swiper';
 
-const app = createStackNavigator(
+const splashscreen = createStackNavigator(
   {
+    swiper: {
+      screen: swiper
+    }
+  },
+  {
+    headerMode: 'none'
+  }
+);
+
+const app = createSwitchNavigator(
+  {
+    SplashScreen: {
+      screen: splashscreen
+    },
     MainScreen: {
       screen: MainScreen
     }
