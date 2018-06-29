@@ -14,8 +14,8 @@ import {
 
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
 
-import MainScreen from './screens/MainScreen';
-import swiper from './screens/swiper';
+import MainScreen from './src/components/templates/Main/MainScreen';
+import swiper from './src/components/templates/SplashScreen/swiper';
 
 const splashscreen = createStackNavigator(
   {

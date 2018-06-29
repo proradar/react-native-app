@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     position:"absolute",
     width: width,
     height: height,
-    opacity: 0.69
+    opacity: 1
   },
   gradientBox: {
     flexDirection:"row",
@@ -57,9 +57,6 @@ const styles = StyleSheet.create({
     height: height,
     flex: 1,
     alignSelf: "flex-start",
-    marginLeft: 0,
-    borderWidth: 5,
-    borderColor: "#000",
     position:"absolute"
   }
 });

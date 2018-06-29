@@ -10,9 +10,9 @@ import {
 
 import Swiper from 'react-native-swiper';
 
-import OB1 from './splashscreen/OB1';
-import OB2 from './splashscreen/OB2';
-import OB3 from './splashscreen/OB3';
+import OB1 from './OB1';
+import OB2 from './OB2';
+import OB3 from './OB3';
 
 type Props = {};
 class swiper extends Component<Props> {
@@ -30,14 +30,14 @@ class swiper extends Component<Props> {
           style={{backgroundColor: '#fff', opacity:0.40, width: 7, height: 7, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 25,
         }}/>}
         showsButtons={false}>
-        <View style={styles.slide3}>
-          <OB3 navigation={this.props.navigation}/>
-        </View>
         <View style={styles.slide1}>
           <OB1 navigation={this.props.navigation}/>
         </View>
         <View style={styles.slide2}>
           <OB2 navigation={this.props.navigation}/>
+        </View>
+        <View style={styles.slide3}>
+          <OB3 navigation={this.props.navigation}/>
         </View>
       </Swiper>
     )

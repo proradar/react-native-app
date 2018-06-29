@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     position:"absolute",
     width: width,
     height: height,
-    opacity: 0.69
+    opacity: 1
   },
 });
 
